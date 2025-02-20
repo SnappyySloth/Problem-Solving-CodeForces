@@ -1,0 +1,52 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long int n,t=0,b=0,c=0,d=0;
+    cin>>n;
+     long int a[n];
+    for(int i=0; i<n; i++)
+    {
+        cin>>a[i];
+    }
+    for(int i=0; i<n; i++)
+    {
+
+        if(a[i]%2==0||a[i]==0)
+        {
+          t++;
+        }
+    }
+
+    for(int i=0; i<n; i++)
+    {
+
+        if(a[i]%2!=0)
+        {
+            b++;
+        }
+    }
+    for(int i=0; i<n; i++)
+    {
+
+        if(a[i]>0)
+        {
+            c++;
+        }
+    }
+    for(int i=0; i<n; i++)
+    {
+
+        if(a[i]<0)
+        {
+            d++;
+        }
+    }
+    cout<<"Even:"<<" "<<t<<endl;
+     cout<<"Odd:"<<" "<<b<<endl;
+      cout<<"Positive:"<<" "<<c<<endl;
+       cout<<"Negative:"<<" "<<d<<endl;
+
+
+}
+
