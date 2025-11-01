@@ -12,7 +12,7 @@ int  main()
     }
     while(sum/10>=0)
     {
-        string str={sum(string)};
+        // string str={sum(string)};
     }
    }
 }
